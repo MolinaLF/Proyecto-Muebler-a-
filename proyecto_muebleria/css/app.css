@@ -1,0 +1,396 @@
+:root {
+    --bs-blue: #037BC0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+/* Estilo general */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background: #ffffff;
+    
+
+}
+
+/* Añadiendo tipo de fuente */
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/*header*/
+header {
+    padding-top: 3rem;
+    /* 3 rem * 10px/rem = 30px */
+    padding-bottom: 3rem;
+    /* 3 rem * 10px/rem = 30px */
+}
+
+
+/* Añadiendo tamaño de fuente */
+/* h1 {
+    font-size: 3.8rem;
+} */
+
+/* Estilos para el ícono del menú QUE SE MUESTRA UANDO ES PEQUEÑO */
+#icono-menu {
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Reescribir colores */
+.text-primary,
+.nombre-sitio {
+    color: var(--bs-blue) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-blue) !important;
+}
+
+.custom-bg {
+    background-image: url('../img/interior-mueble-madera\ \(1\).jpg');
+    /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 20rem; */
+    min-height: 40rem;
+
+
+
+}
+
+.section-con-color {
+    background-image: url('../img/interior-mueble-madera\ \(1\).jpg');
+    /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40rem;
+
+    /* Agregamos una superposición de color semitransparente */
+    position: relative;
+}
+
+.section-con-color::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.576);
+    /* Color medio oscuro con transparencia */
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: transparent;
+    /* Hacer la barra de navegación transparente */
+    margin-top: 0;
+    /* Mover la barra de navegación arriba */
+}
+
+
+.navbar-nav .nav-link {
+    margin: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    /* font-weight: bold; */
+    color: aliceblue !important;
+}
+
+.logo-img {
+    max-width: 150px;
+    /* Ajusta el ancho máximo según tus necesidades */
+    height: 60%;
+    /* Mantiene la proporción de aspecto */
+}
+
+.text-center {
+    position: relative;
+    /* Permite que el contenido de texto sea posicionado con respecto a section-con-color */
+    z-index: 1;
+    /* Coloca el texto encima del fondo oscuro */
+}
+
+@media (max-width: 767px) {
+    .rowCartel {
+        display: none;
+      }
+
+   }
+    .d-md-none {
+      display: block;
+    }
+  
+@media (min-width:768px) {
+    .producto img {
+        height: 43rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.seccion {
+    min-height: 1000px;
+    padding: 2rem;
+}
+
+.circle-content {
+    /* Agregar un borde con un color y grosor personalizado */
+    /* Hacer que los bordes sean redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    background: #000000;
+    /* fallback for old browsers */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    color: white;
+    /* Color de texto en contraste con el fondo */
+}
+
+.circle-content h3 {
+    font-weight: bold;
+    /* Hacer que el título sea negrita */
+}
+
+
+.letrero-container{
+    /* Agregar un borde con un color y grosor personalizado */
+    /* Hacer que los bordes sean redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    background: black;
+    /* fallback for old browsers */
+    /* fallback for old browsers */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    color: white;
+    /* Color de texto en contraste con el fondo */
+}
+.letrero-container h3 {
+    font-weight: bold;
+    /* Hacer que el título sea negrita */
+}
+
+
+h2 {
+    font-size: 3.2rem;
+}
+
+.categoria img {
+    transition: -properties:transform;
+    transition-duration: 300ms;
+}
+
+/* transicion */
+.categoria img:hover {
+    transform: scale(1.2);
+}
+
+/*DISPOSITIVOS MOVILES PRECAUCION !!*/
+
+
+/*pantallas mayores a 768 px*/
+@media (min-width: 767px) {
+
+    #boton-icono {
+        margin-left: 2rem;
+        /* Aumenta el padding izquierdo a 20px (2rem) */
+        margin-right: 2rem;
+        /* Aumenta el padding derecho a 20px (2rem) */
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+}
+/* 
+#top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #192655;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9999; /* Ajusta el valor de z-index según tus necesidades */
+  /* } */
+   
+  footer{
+    background-color: #1E2229;
+    color: white!important;
+  }
+
+  /* Estilos para el botón "Volver arriba" */
+#top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #192655;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9999; /* Ajusta el valor de z-index según tus necesidades */
+  }
+  
+/* Estilos para el botón de WhatsApp */
+/* Estilos para el botón de WhatsApp */
+/* Estilos para el botón de WhatsApp */
+/* Estilos para el botón de WhatsApp */
+/* Estilos para el botón de WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #25d366; /* Color de WhatsApp (verde) */
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; /* Agregamos una transición suave al color de fondo */
+  }
+  
+  /* Estilos para el ícono de WhatsApp */
+  .btn-whatsapp i {
+    color: white;
+  }
+  
+  /* Cambiar el color de fondo al pasar el mouse o hacer clic */
+  .btn-whatsapp:hover,
+  .btn-whatsapp:active {
+    background-color: #25d366; /* Mantener el color verde en hover y clic */
+  }
+  
+  
+  /* Estilos para el botón de WhatsApp al hacer clic */
+  .btn-whatsapp:active {
+    transform: scale(1.1);
+  }
+  
+
+ /* barra de cintatcos */
+
+  /* Estilos para la barra de contacto superior */
+.contact-bar {
+    background-color: #1E2229; /* Color de fondo de la barra */
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Ocultar la barra de contacto en dispositivos con pantalla ancha inferior a 992px */
+@media (max-width: 992px) {
+    .contact-bar {
+        display: none;
+    }
+}
+
+/* card color */
+.cardcolor{
+    background-color: #219C99 !important;
+}
+
+/* FORMULARIO */
+/* Estilos generales */
+form {
+    font-family: Arial, sans-serif;
+    background-color: #0F0F0F;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Iconos de validación */
+.valid-feedback, .invalid-feedback {
+    display: none;
+    color: green; /* o red para indicar validez o invalidez */
+    margin-top: 5px;
+}
+
+/* Estilo de campo activo */
+input:focus, textarea:focus {
+    border: 1px solid #007BFF;
+}
+
+
+.map{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
